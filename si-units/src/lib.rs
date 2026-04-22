@@ -135,11 +135,17 @@ impl PySIObject {
         self.unit.eq(&other.unit)
     }
 
-    pub fn value_in<'py>(&self, py: Python<'py>, unit: &Self) -> PyResult<Bound<'py, PyAny>> {
-        self.check_units(unit)?;
-        self.value
-            .bind(py)
-            .call_method1("__truediv__", (&unit.value,))
+    pub fn value_in<'py>(
+        &self,
+        py: Python<'py>,
+        unit: &Bound<'py, PyAny>,
+    ) -> PyResult<Bound<'py, PyAny>> {
+        if unit.cast::<Celsius>().is_ok() {
+            return self.__truediv__(unit);
+        }
+        let u = unit.extract::<PyRef<Self>>()?;
+        self.check_units(&u)?;
+        self.value.bind(py).call_method1("__truediv__", (&u.value,))
     }
 
     #[classattr]

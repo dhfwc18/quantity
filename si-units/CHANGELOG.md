@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Generalized indexing, such that, e.g., general multidimensional slicing operations are possible for quantities containing NumPy arrays. [#110](https://github.com/itt-ustutt/quantity/pull/110)
 
 ### Added
-- Added `ATM` and `POISE` as addition units for pressure. [#112](https://github.com/itt-ustutt/quantity/pull/112)
+- Added `ATM` and `POISE` as addition units for pressure.
 
 ### Fixed
 - Fixed the String representation of non-scalar mass quantities. [#111](https://github.com/itt-ustutt/quantity/pull/111)

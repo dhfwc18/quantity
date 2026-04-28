@@ -51,7 +51,7 @@
 //! [AU] | $\text{au}$ | length | $149597870700\\,\text{m}$
 //! [BAR] | $\text{bar}$ | pressure | $10^5\\,\text{Pa}$
 //! [ATM] | $\text{atm}$ | pressure | $101325\\,\text{Pa}$
-//! [POISE] | $\text{P}$ | pressure | $0.1\\,\text{Pa}$
+//! [POISE] | $\text{P}$ | viscosity | $0.1\\,\text{Pa}\cdot\text{s}$
 //! [CALORIE] | $\text{cal}$ | energy | $4.184\\,\text{J}$
 //! [CELSIUS] | $^\\circ\text{C}$ | temperature | $t\\,^\\circ\text{C}=\\left(t+273.15\\right)\\,\text{K}$
 //! [DAY] | $\text{d}$ | time | $86400\\,\text{s}$

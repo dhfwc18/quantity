@@ -516,6 +516,8 @@ pub fn _core(m: &Bound<'_, PyModule>) -> PyResult<()> {
     add_constant(m, "AMU", 1.6605390671738466e-27, _KILOGRAM)?;
     add_constant(m, "AU", 149597870700.0, _METER)?;
     add_constant(m, "BAR", 1e5, _PASCAL)?;
+    add_constant(m, "ATM", 101325., _PASCAL)?;
+    add_constant(m, "POISE", 0.1, _PASCAL)?;
     add_constant(m, "CALORIE", 4.184, _JOULE)?;
     m.add("CELSIUS", Celsius)?;
     add_constant(m, "DAY", 86400.0, _SECOND)?;

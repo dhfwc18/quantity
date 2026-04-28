@@ -29,6 +29,8 @@ of quantities is unique, they do not appear in formatted outputs.
 | AMU      | $\text{u}$   | mass          | $1.6605390671738466\times 10^{-27}~\text{kg}$ |
 | AU       | $\text{au}$  | length        | $149597870700~\text{m}$                       |
 | BAR      | $\text{bar}$ | pressure      | $10^5~\text{Pa}$                              |
+| ATM      | $\text{atm}$ | pressure      | $101325~\text{Pa}$                              |
+| POISE    | $\text{P}$   | pressure      | $0.1~\text{Pa}$                              |
 | CALORIE  | $\text{cal}$ | energy        | $4.184~\text{J}$                              |
 | DAY      | $\text{d}$   | time          | $86400~\text{s}$                              |
 | DEBYE    | $\text{De}$  | dipole moment | $\sqrt{10^{-19}~\text{JÅ}^3}$                 |

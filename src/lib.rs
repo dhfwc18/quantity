@@ -50,6 +50,8 @@
 //! [AMU] | $\text{u}$ | mass | $1.6605390671738466\times 10^{-27}\\,\text{kg}$
 //! [AU] | $\text{au}$ | length | $149597870700\\,\text{m}$
 //! [BAR] | $\text{bar}$ | pressure | $10^5\\,\text{Pa}$
+//! [ATM] | $\text{atm}$ | pressure | $101325\\,\text{Pa}$
+//! [POISE] | $\text{P}$ | pressure | $0.1\\,\text{Pa}$
 //! [CALORIE] | $\text{cal}$ | energy | $4.184\\,\text{J}$
 //! [CELSIUS] | $^\\circ\text{C}$ | temperature | $t\\,^\\circ\text{C}=\\left(t+273.15\\right)\\,\text{K}$
 //! [DAY] | $\text{d}$ | time | $86400\\,\text{s}$
@@ -519,6 +521,10 @@ pub const AMU: Mass = Quantity(1.6605390671738466e-27, PhantomData);
 pub const AU: Length = Quantity(149597870700.0, PhantomData);
 /// Additional unit bar $\\left(1\\,\text{bar}=10^5\\,\text{Pa}\\right)$
 pub const BAR: Pressure = Quantity(1e5, PhantomData);
+/// Additional unit atmosphere $\left(1\,\text{atm}=101325\,\text{Pa}\right)$
+pub const ATM: Pressure = Quantity(101325.0, PhantomData);
+/// Additional unit poise $\left(1\,\text{P}=0.1\,\text{Pa}\cdot\text{s}\right)$
+pub const POISE: Viscosity = Quantity(0.1, PhantomData);
 /// Additional unit calorie $\\left(1\\,\text{cal}=4.184\\,\text{J}\\right)$
 pub const CALORIE: Energy = Quantity(4.184, PhantomData);
 /// Additional unit day $\\left(1\\,\text{d}=86400,\text{s}\\right)$

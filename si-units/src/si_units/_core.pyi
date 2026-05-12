@@ -245,6 +245,7 @@ class Angle:
     def __rmul__(self, lhs: float) -> Self: ...
     def __truediv__(self, rhs: Any) -> Any: ...
     def __neg__(self) -> Self: ...
+    def value_in(self, unit: Self) -> float: ...
     def sin(self) -> float: ...
     def cos(self) -> float: ...
     def tan(self) -> float: ...
@@ -285,6 +286,8 @@ ANGSTROM: Final[SIObject]
 AMU: Final[SIObject]
 AU: Final[SIObject]
 BAR: Final[SIObject]
+ATM: Final[SIObject]
+POISE: Final[SIObject]
 CALORIE: Final[SIObject]
 GRAM: Final[SIObject]
 HOUR: Final[SIObject]
@@ -292,6 +295,8 @@ LITER: Final[SIObject]
 MINUTE: Final[SIObject]
 G: Final[SIObject]
 RGAS: Final[SIObject]
+EPSILON0: Final[SIObject]
+KE: Final[SIObject]
 QUECTO: Final[float]
 RONTO: Final[float]
 YOCTO: Final[float]
